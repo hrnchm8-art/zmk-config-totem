@@ -20,28 +20,28 @@
 
         base {
             bindings = <
-                  &kp Q  &kp W  &kp E  &kp R  &kp T               &kp Y      &kp U      &kp I          &kp O    &kp P
-                  &kp A  &kp S  &kp D  &kp F  &kp G               &kp H      &kp J      &kp K          &kp L    &kp LEFT_SHIFT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V  &kp B               &kp N      &kp M      &kp COMMA      &kp DOT  &kp FSLH        &kp TAB
-                                &mo 2  &mo 1  &kp LG(LEFT_WIN)    &kp SPACE  &kp ENTER  &kp BACKSPACE
+                  &kp Q  &kp W  &kp E         &kp R       &kp T               &kp Y      &kp U      &kp I          &kp O      &kp P
+                  &kp A  &kp S  &kp D         &kp F       &kp G               &kp H      &kp J      &kp K          &kp L      &kp P
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V       &kp B               &kp N      &kp M      &kp PERIOD     &kp COMMA  &kp LEFT_SHIFT  &kp TAB
+                                &lt 2 ESCAPE  &lt 1 CAPS  &kp LG(LEFT_WIN)    &kp SPACE  &kp ENTER  &kp BACKSPACE
             >;
         };
 
         nav_num {
             bindings = <
-                   &kp LA(BACKSPACE)   &kp BACKSPACE  &kp UP     &kp DELETE     &kp PRCNT             &kp N5     &kp N6           &kp N7       &kp N8    &kp N9
-                   &kp LA(LEFT_ARROW)  &kp LEFT       &kp DOWN   &kp RIGHT      &kp PRINTSCREEN       &kp N0     &kp N1           &kp N2       &kp N3    &kp N4
-&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LG(LEFT)   &kp ENTER  &kp LG(RIGHT)  &kp LG(DOWN_ARROW)    &kp COLON  &kp PLUS         &kp MINUS    &kp STAR  &kp FSLH  &kp CARET
-                                                      &trans     &trans         &trans                &kp EQUAL  &kp RIGHT_SHIFT  &kp PERCENT
+                   &kp LA(BACKSPACE)   &kp BACKSPACE         &kp UP    &kp DOLLAR     &kp PRCNT          &kp N5                   &kp N6             &kp N7          &kp N8    &kp N9
+                   &kp LA(LEFT_ARROW)  &kp LEFT              &kp DOWN  &kp RIGHT      &kp PRINTSCREEN    &kp N0                   &kp N1             &kp N2          &kp N3    &kp N4
+&kp LG(BACKSPACE)  &kp LG(LEFT_SHIFT)  &kp NON_US_BACKSLASH  &kp HASH  &kp AMPERSAND  &kp AT             &kp SQT                  &kp DOUBLE_QUOTES  &kp MINUS       &kp STAR  &kp FSLH  &kp PIPE
+                                                             &trans    &trans         &trans             &mt RIGHT_ALT SEMICOLON  &kp COLON          &kp UNDERSCORE
             >;
         };
 
         sym_func {
             bindings = <
-           &kp ESC        &kp LEFT_BRACE        &kp RIGHT_BRACE        &none             &none             &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &kp F4   &kp F5
-           &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH          &kp F6        &kp F7           &kp F8        &kp F9   &kp F10
-&kp GRAVE  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp UNDERSCORE    &kp F11       &kp F12          &kp F13       &kp F14  &kp F15  &bt BT_CLR_ALL
-                                                &trans                 &trans            &trans            &none         &kp RIGHT_SHIFT  &none
+        &trans  &trans  &trans  &kp EXCLAMATION   &kp QUESTION      &bt BT_SEL 1      &bt BT_SEL 2          &bt BT_SEL 3           &kp F4        &kp F5
+        &trans  &trans  &trans  &kp GRAVE         &kp TILDE         &kp LESS_THAN     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp EXCLAMATION
+&trans  &trans  &trans  &trans  &kp GREATER_THAN  &kp UNDERSCORE    &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp F14       &kp F15          &bt BT_CLR_ALL
+                        &trans  &trans            &trans            &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp QUESTION
             >;
         };
 
@@ -53,12 +53,6 @@
                                          &none                 &none             &none    &none         &none         &none
             >;
         };
-
-        extra1 { status = "reserved"; };
-
-        extra2 { status = "reserved"; };
-
-        extra3 { status = "reserved"; };
     };
 
     conditional_layers {
