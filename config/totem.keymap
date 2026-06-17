@@ -64,10 +64,10 @@
 
         device {
             bindings = <
-              &kp N2        &kp Q  &kp W  &kp E      &kp FR_R            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-              &kp N1        &kp A  &kp S  &kp D      &kp F               &none         &none         &none         &none         &none
-&kp NUMBER_4  &kp NUMBER_3  &kp X  &kp C  &kp V      &kp B               &none         &none         &none         &none         &none         &to 0
-                                   &kp T  &kp SPACE  &kp LEFT_CONTROL    &none         &none         &none
+         &kp N1          &kp Q  &kp W         &kp E      &kp FR_R            &kp Y       &kp I            &kp O              &kp O  &kp P
+         &kp LEFT_SHIFT  &kp A  &kp S         &kp D      &kp F               &kp FR_H    &kp J            &kp K              &kp L  &kp FSLH
+&kp ESC  &kp N2          &kp X  &kp C         &kp V      &kp B               &kp N       &kp M            &kp DOT            &none  &none     &to 0
+                                &kp NUMBER_3  &kp SPACE  &kp LEFT_CONTROL    &kp K_MUTE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN
             >;
         };
     };
